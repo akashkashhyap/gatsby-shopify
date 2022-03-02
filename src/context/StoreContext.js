@@ -71,10 +71,10 @@ export const StoreProvider = ({ children }) => {
   const addVariantToCart = async (product, quantity) => {
     setLoading(true)
 
-    if (checkout.id === "") {
-      console.error("No checkout ID assigned.")
-      return
-    }
+    // if (checkout.id === "") {
+    //   console.error("No checkout ID assigned.")
+    //   return
+    // }
 
     const checkoutID = checkout.id
     const variantId = product.variants[0]?.shopifyId
