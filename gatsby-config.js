@@ -38,5 +38,13 @@ module.exports = {
         storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
       },
     },
+    {
+      resolve: "gatsby-source-prismic",
+      options: {
+        repositoryName: "gatsby-shopify-prismic",
+        accessToken: process.env.PRISMIC_API_ACCESS_TOKEN,
+        customTypesApiToken: process.env.PRISMIC_CUSTOM_API_TOKEN
+      },
+    },
   ],
 }

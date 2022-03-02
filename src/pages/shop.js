@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ProductCard from "../components/ProductCard"
 
-const Products = ({ data }) => {
+const Shop = ({ data }) => {
   const { nodes } = data.allShopifyProduct
 
   return (
@@ -21,7 +21,7 @@ const Products = ({ data }) => {
   )
 }
 
-export default Products
+export default Shop
 
 export const query = graphql`
   {
